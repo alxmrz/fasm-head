@@ -1,2 +1,2 @@
-build:
-	fasm main.asm head
+fbuild:
+	fasm main.asm ./build/head && chmod +x ./build/head
