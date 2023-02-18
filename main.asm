@@ -32,7 +32,7 @@ _start:
 
     mov [file_descriptor], eax ; save desctiptor to memory
     
-    cmp [file_descriptor], -1  ; if negative then error
+    cmp [file_descriptor], 0  ; if negative then error
     jl .not_opened
 
     mov eax, 3                 ; sys_read
